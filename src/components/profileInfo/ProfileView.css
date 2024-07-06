@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    font-size: 15px;
+    
+}
+
+.navlink{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.he{
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(14, 13, 13);
+}
+
+.profile-info{
+    margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 0 10%;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+ 
+ 
+}
+
+.moddle-profile-info{
+    width: calc(100% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#1b1d1eb3 ;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+
+    
+}
+
+.user-followers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.head2{
+    background-color: #abb0b3b3;
+    padding: 0.5rem 1rem;
+    margin: 0rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+
+
+}
+
+.company{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+
+}
+
+.moddle-profile-info article{
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+.avt{
+    width: 12rem;
+    height: 13rem;
+    margin-right: 1.5rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 520px) {
+    .avt{
+        width: 9rem;
+        height: 10rem;
+        margin-right: 1.5rem;
+        border-radius: 1rem;
+        object-fit: cover;
+    }
+  }    
+
+.user-info h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.user-login{
+    font-size: 1.4rem;
+    margin-top: -0.5rem;
+    color: #9da0a4;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.user-info p {
+    font-size: 1.4rem;
+}
+
+.divvv{
+    width: calc(100% - 1rem);
+    height: 30rem;
+    padding: 1rem;
+    border: 1px solid white;
+}
