@@ -9,13 +9,37 @@ html{
     
 }
 
+.same-color{
+    color: #fff;
+}
+
 .navlink{
     text-decoration: none;
     font-size: 1.5rem;
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .he{
+    margin-top: 1rem;
     text-decoration: none;
+}
+
+.he:hover{
+    text-decoration: none;
+    color: #9da0a4;
+}
+
+.anchor-same{
+    color: #fff;
+}
+
+td{
+    color: #fff;
 }
 
 body{
@@ -108,6 +132,16 @@ body{
     margin-bottom: 0.8rem;
     text-decoration: none;
     cursor: pointer;
+}
+
+.user-login a {
+    color: #948e8e;
+    text-decoration: none;
+}
+
+.same-color a {
+    color: #ffff;
+    text-decoration: none;
 }
 
 .user-info p {

@@ -1,331 +1,100 @@
 *{
     padding: 0;
     margin: 0;
-    color: #fff;
-    
+    /* color: #fff; */
 }
 
 html{
     font-size: 15px;
-    
 }
 
 body{
-    background-color: rgb(14, 13, 13);
-}
-
-nav{
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10%;
-  align-items: center;
-  border: 1px solid black;
-  margin-top: 2rem;
-  
-}
-
-nav > h1{
-   font-family: 'Courier New', Courier, monospace;
-   font-size: 2rem;
-   color: #d8d8d8;
-   text-decoration: none;
-}
-
-.login-section{
-    width: 11.4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-    
-}
-
-.login{
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.login:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.search-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(149, 148, 148);
-    padding: 0.3rem 1rem;
-    border-radius: 0.4rem;
-
-}
-
-.search-icon{   
-    font-weight: bold;
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-
-
-.search{
-    font-size: 1.3rem;
-    margin-left: 0.5rem;
-    font-weight: bold;
-}
-
-.search:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/*---------------- nav section complete----------------------*/
-
-
-
-.github-profile-view{
-    
-    margin-top: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.github-profile-view article {
-    text-align: center;
-}
-
-.github-profile-view h1{
-  font-size: 4.5rem;
-  color: #474747;
-  
-}
-
-.github-profile-view p{
-    margin-top: 1rem;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-.feature-section{
-    margin-top: 1rem;
-    padding: 0 10%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
    
 }
 
-.feature{
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 8rem;
-    text-align: center;
-}
-
-.feature-section article{
-    text-align: left;
-    border: 1px  solid white;
-    width: 25rem;
-    padding: 1.6rem;
-    border-radius: 0.8rem;
-}
-
-.feature-section article h1{
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.feature-section article p{
-    font-size: 1.3rem;
-}
-
-.github-profile-info{
-    margin-top: 6rem;
-    padding: 0 10%;
+.container{
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-content: center;
+    background-image: url('../../assets//header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading-container{
+    display: flex;
     flex-direction: column;
-}
-
-.github-profile-info h2{
-    font-weight: bold;
-     font-size: 1.2rem;
-}
-
-.github-profile-info article{
-    margin-top: 2rem;
-    border-bottom: 1px solid rgb(109, 108, 108);
-    padding-bottom: 1rem;
-}
-
-.api-searching{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.734);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0rem ;
+    gap: 2rem;
 }
 
 
-
-.api-searching-true{
-    display: none;
-}
-
-
-
-.api-searching article{
-    width: 29rem;
-    height: 30rem;
-    border: 1px solid white;
-    background-color: #18191b;
-    border-radius: 1rem;
-    padding: 2rem;
-}
-
-@media screen and (max-width: 640px) {
-    .api-searching article{
-        width: 25rem;
-        height: 25rem;
-        border: 1px solid white;
-        background-color: #18191b;
-        border-radius: 1rem;
-        padding: 2rem;
-    }
-  } 
-
-  
-
-.se{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-
-}
-
-.se h1{
-    font-size: 1.6rem;
-    color: #fff;
-}
-
-.se p{
-    cursor: pointer;
-    color:  white;
-    background-color: #43484e;
-    font-size: 1.4rem;
-    padding: 0.2rem 1rem;
-    border-radius: 0.5rem;
-}
-
-.se1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.se1 input{
-    background-color: black;
+.input-box {
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    color: black;
+    width: 40rem;
     outline: none;
-    padding: 0.5rem 1rem;
-    border: 1px solid white;
-    border-radius: 0.5rem;
-    font-size: 1.4rem;
-    width: 18rem;
+    font-size: 1.6rem;
+}
+h1{
+   font-family: 'Courier New', Courier, monospace;
+   text-decoration: none;
+   font-size: 4.5rem;
+    color: #474747;
 }
 
-@media screen and (max-width: 504px) {
-    .api-searching article{
-        width: 22rem;
-        height: 22rem;
-        border: 1px solid white;
-        background-color: #18191b;
-        border-radius: 1rem;
-        padding: 2rem;
-    }
-    .se1 input{
-        background-color: black;
-        outline: none;
-        padding: 0.5rem 1rem;
-        border: 1px solid white;
-        border-radius: 0.5rem;
-        font-size: 1.4rem;
-        width: 14rem;
-    }
-    
-  }
-
-.se1 p{
-    cursor: pointer;
-    color:  white;
-    background-color: #43484e;
-    font-size: 1.4rem;
-    padding: 0.2rem 1rem;
-    border-radius: 0.5rem;
-}
-
-.se1 p:hover{
-    background-color:#55595e ;
-}
-
-.se p:hover{
-    background-color: #505457;
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .display-data{
-    width: 100%;
-    padding: 0.5rem;
-    display: flex;
-    justify-self: start;
-    margin-top: 2rem;
-    
-}
-
-.display-data-none{
-    display: none;
-}
-
-.display-data:hover{
-    background-color: black;
-    border-radius: 1rem;
-    width: 98%;
+    margin-top: 1rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 38rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    border: 1px  solid black;
+
+}
+
+.display-data p{
+    font-size: 1.5rem;
+    color:  black;
+}
+
+.search-icon{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    padding: 0rem 1rem; 
+}
+
+.search{
+    width: 40rem;
+    /* border: 1px solid black;
+    background-color: #fff;
+    border-radius: 2rem;
+    /* padding: 0.3rem 1rem;     */
+    /* width: 40rem;  */
     
 }
 
-.display-img{
-    margin-right: 1rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    object-fit: cover;
-    border-radius: 0.7rem;
-    border: none;
+.search-bar{
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    /* padding: 0.3rem 1rem;     */
+    width: 40rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-
-.display-img-none{
-    display: none;
-}
-
-.api-user{
-    margin-top: 0.5rem;
-    font-size: 1.3rem;
-    color: #dcdfe4;
-}
-
-.link{
-    text-decoration: none;
-}
-
-@media screen and (max-width: 640px) {
-    nav{
-      
-        padding: 0 5%;
-     
-      }
-  }
 

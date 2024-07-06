@@ -66,14 +66,8 @@ const ProfileView = () => {
     <>
       <nav>
         <NavLink to="/" className="navlink">
-          <h1 className="he">GVP</h1>
+          <h1 className="he">Home</h1>
         </NavLink>
-
-        <article className="login-section">
-          <div className="search-section" onClick={() => handalSearch()}>
-            <p className="search">search</p>
-          </div>
-        </article>
       </nav>
 
       <section className="profile-info">
@@ -81,34 +75,34 @@ const ProfileView = () => {
           <article>
             <img src={state.avatar_url} alt="" className="avt" />
             <div className="user-info">
-              <h1>{state.login}</h1>
+              <h1 className="same-color">{state.login}</h1>
 
               <p className="user-login">
                 <a href={`https://github.com/${state.login}`} target="blank">
                   @{state.login}
                 </a>
               </p>
-              <p>{state.bio}</p>
-              <p>{state.location}</p>
-              <p>Last Update: {state.updated_at}</p>
-              <p>Member Since : {state.created_at}</p>
+              <p className="same-color">{state.bio}</p>
+              <p className="same-color">{state.location}</p>
+              <p className="same-color">Last Update: {state.updated_at}</p>
+              <p className="same-color">Member Since : {state.created_at}</p>
             </div>
           </article>
           <div className="user-followers">
-            <h2 className="head2">
+            <h2 className="head2 same-color">
               <a href="https://api.github.com/users/aamir-islam/followers">
                 Followers {state.followers}
               </a>{" "}
             </h2>
 
-            <h2 className="head2">
+            <h2 className="head2 same-color">
               <a href="https://api.github.com/users/aamir-islam/following{/other_user}">
                 Followings {state.following}
               </a>
             </h2>
           </div>
-          <p className="company"> Company : {state.company}</p>
-          <p className="company">
+          <p className="company same-color"> Company : {state.company}</p>
+          <p className="company same-color">
             {" "}
             Social Link :{" "}
             <a href={state.blog} target="blank">
@@ -123,7 +117,7 @@ const ProfileView = () => {
       <section
         className={checkSearcjBtn ? " api-searching-true" : "api-searching"}
       >
-        <article>
+        {/* <article>
           <div className="se">
             <h1>Search</h1>
             <p onClick={() => handalClose()}>close</p>
@@ -148,7 +142,7 @@ const ProfileView = () => {
               </div>
             </div>
           ) : null}
-        </article>
+        </article> */}
       </section>
     </>
   );

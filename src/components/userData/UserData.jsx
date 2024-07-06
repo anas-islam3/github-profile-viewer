@@ -95,7 +95,7 @@ const UserData = ({ state }) => {
   return (
     <>
       <section className="user-data">
-        <h1>Profile Statistics</h1>
+        <h1 className="same-color">Profile Statistics</h1>
 
         <table className="user-data-table">
           <tbody>
@@ -130,20 +130,20 @@ const UserData = ({ state }) => {
         ))} */}
 
         <section className="display-repos">
-          <h1>Most Starred Repository</h1>
+          <h1 className="same-color">Most Starred Repository</h1>
 
           {currentItems.map((item) => (
             <article className="user-repo" key={item.id}>
               <h2>
-                <a href={item.html_url} target="blank">
+                <a href={item.html_url} target="blank" className="anchor-same">
                   {item.name}
                 </a>
               </h2>
-              <p>
+              <p className="same-color">
                 Language : <span className="mid"> {item.language} </span>
               </p>
-              <p> Created at : {item.created_at}</p>
-              <p>Last update :{item.updated_at}</p>
+              <p className="same-color"> Created at : {item.created_at}</p>
+              <p className="same-color">Last update :{item.updated_at}</p>
             </article>
           ))}
         </section>
